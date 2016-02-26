@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    
+<div> <button id="btn1">NESTED LOOP</button>
+     
+</div>
+<div id="demo"></div>
+    
+<script>
+// create an event listener
+var event1 = document.getElementById("btn1");
+event1.addEventListener('click', myfirst, false);
+
+
+//Declare Function
+function myfirst () {
+       var text = "";
+       var i = 0;
+       while (i < 60) {
+       i++;
+       if (i === 55) {
+       continue;
+        }
+    text += "<br>The number is " + i;
+}
+document.getElementById("demo").innerHTML = text;               
+}
+</script>
+</body>
+</html>

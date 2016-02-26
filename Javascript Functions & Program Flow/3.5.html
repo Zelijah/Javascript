@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Button -->
+<div><button onclick="myFunction()">Click me</button></div>
+<!-- End Of Button -->
+
+<div id="demo"></div>
+
+
+    
+<script> 
+// create an event listener
+var event1 = document.getElementById("btn1");
+event1.addEventListener('click', myfirst, false);
+
+//Create an Array
+var cars = ["Jeep", "Ford", "Bentley", "Nissan", "Buggatti", "Ferarri", "Aeon", "Yahama", "Honda", "Quadzilla"];
+
+//Write the array to the DOM
+document.getElementById("demo").innerHTML = cars;    
+alert(cars);    
+    
+//Declare Function
+function myfirst() {
+    
+    
+//gettting user input and storing in local variable
+var var1 = (document.getElementById("btn1").value);
+
+//Validate that the user does enter some value
+for (i = 0; i < cars.length; i++) { 
+    text += cars[i] + "<br>";
+} 
+    
+    
+    
+</script>    
+    
+    
+    
+    
+    
+</body>
+</html>

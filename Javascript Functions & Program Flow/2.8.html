@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+<!-- Begin Viewport for all screens -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Link to bootstrap -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">        
+</head>   
+<html>
+<body>
+
+
+<!-- Starting Container -->
+<div class="container"> 
+
+<!-- start row -->    
+<div class="row"> 
+    
+<div class="col-lg-6"></div>  
+<div class="col-lg-6"> 
+<!-- coontent goes in here -->
+ <button id="btn1">WHILE LOOP</button>
+    
+</div>    
+</div>
+<!-- End row -->
+
+    
+<!-- start row -->    
+<div class="row"> 
+<div class="col-lg-6"></div>  
+<div class="col-lg-6"> 
+<!-- coontent goes in here -->
+<div id="demo"></div>
+    
+</div>    
+</div>
+<!-- End row -->
+
+    
+    
+</div>   
+<!-- End Container -->
+ 
+    
+    
+<script>
+// create an event listener
+var event1 = document.getElementById("btn1");
+event1.addEventListener('click', myfirst, false);
+
+   
+// Declare Function
+function myfirst () {
+    var text = "";
+    var i = 0;
+    while (i < 10) {
+        text += "<br>The number is " + i;
+        i++;
+}
+document.getElementById("demo").innerHTML = text;   
+}
+    
+</script>
+
+</body>    
+</html>  

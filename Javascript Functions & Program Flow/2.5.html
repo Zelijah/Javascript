@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+    
+    
+<form>
+<input type="number" id="num1"><br>
+<br>
+</form>
+
+<div> <button id="btn1">fOR LOOP !</button>
+     
+</div>
+<div id="demo"></div>    
+    
+<script>
+// create an event listener
+var event1 = document.getElementById("btn1");
+event1.addEventListener('click', myfirst, false);
+    
+// Declare variables
+function myfirst() {
+//alert("TEST el");
+     
+  var text = "";
+    var i;
+    for (i = 0; i < 50; i++) {
+        text += "The number is " + i + "<br>";
+    }
+   // alert(text);
+    document.getElementById("demo").innerHTML = text;
+}
+
+   
+</script> 
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Start Of Form -->     
+<form>
+<input type="text" id="num1"><br>
+<br>
+<input type="text" id="num2"><br>
+<br>
+<input type="text" id="num3"><br>
+<br>
+</form>   
+<!-- End Of Form -->
+    
+
+<!-- Button -->
+<div><button id="btn1">SUBMIT</button></div>
+<!-- End Of Button -->
+
+<div id="demo"></div>
+
+<script> 
+// create an event listener
+var event1 = document.getElementById("btn1");
+event1.addEventListener('click', myfirst, false);
+
+//declare variables
+function myfirst() {
+var1 = (document.getElementById("num1").value);
+var2 = (document.getElementById("num2").value);
+var3 = (document.getElementById("num3").value);
+
+//Begin Of Array
+var cars = new Array(var1, var2, var3);
+
+//Declare String Text
+var text = "";
+
+//For Loop    
+for (i = 0; i < cars.length; i++) {
+        text += "<li>" + cars[i] + "</li>";
+    }
+    text += "</ul>";
+    document.getElementById("demo").innerHTML = text; 
+}   
+</script>
+</body>
+</html>

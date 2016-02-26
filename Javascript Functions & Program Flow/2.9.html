@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div> <button id="btn1">DO WHILE LOOP</button>
+    
+</div>
+<div id="demo"></div>
+
+<script>
+//Create Event Listener 
+var event1 = document.getElementById("btn1");
+event1.addEventListener('click', myfirst, false);
+
+//Declare Function 
+function myfirst() {
+   // alert("test"); 
+    var text = "";
+    var i = 0;
+    do {
+        text += "<br>The number is " + i;
+       // alert(text);
+        i++;       
+}
+while (i < 10)
+
+document.getElementById("demo").innerHTML = text;
+      
+}   
+</script>
+</body>
+</html>

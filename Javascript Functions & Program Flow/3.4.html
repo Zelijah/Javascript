@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+    
+<!-- Start Of Form -->     
+<form>
+<input type="text" id="num1"><br>
+<br>
+</form>   
+<!-- End Of Form -->  
+
+<!-- Button -->
+<div><button id="btn1">ENTER CAR NAME</button></div>
+<!-- End Of Button -->
+
+<div id="demo"></div>
+
+<script> 
+// create an event listener
+var event1 = document.getElementById("btn1");
+event1.addEventListener('click', myfirst, false);
+
+//Create an Array
+var cars = ["Jeep", 
+            "Ford", 
+            "Bentley", 
+            "Nissan"];
+
+//Write the array to the DOM
+document.getElementById("demo").innerHTML = cars;
+
+    
+//Declare Function
+function myfirst() {
+    
+    
+//gettting user input and storing in local variable
+var var1 = (document.getElementById("num1").value);
+
+//Validate that the user does enter some value
+if (var1 === "") {
+ 
+alert("You must enter a value ! ");
+    
+} else { 
+
+//shift the user input to the array
+//cars.shift(var1);        
+
+//rewrite the array to the DOM    
+document.getElementById("demo").innerHTML = cars;
+
+//push the user input to the array
+//cars.push(var1);        
+
+//rewrite the array to the DOM    
+document.getElementById("demo").innerHTML = cars;
+
+
+    
+} 
+    
+
+
+}
+
+</script>
+</body>
+</html> 
