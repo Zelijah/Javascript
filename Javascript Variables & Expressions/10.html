@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Start Of Form -->     
+<form>
+<input type="Number" id="num1"><br>
+<br>
+<input type="Number" id="num2"><br>
+<br>
+</form>   
+<!-- End Of Form -->  
+
+<!-- Button -->
+<div><button id="btn1">SUBMIT</button></div>
+<!-- End Of Button -->
+
+<div id="demo"></div>    
+
+<script> 
+// create an event listener
+var event1 = document.getElementById("btn1");
+event1.addEventListener('click', myfirst, false);
+
+//Declare Function
+function myfirst() {
+var var1 = parseInt(document.getElementById("num1").value);
+var var2 = parseInt(document.getElementById("num2").value);
+
+//If Number from Var1 && Var2 Are Greater Than 10 User Passes, Else Try Again
+                if (var1 > 10 && var2 > 10) {
+
+alert("Numbers Are Greater Than Ten")
+
+}else{
+alert("Numbers Are Not Greater Than Ten")
+
+}
+    
+}
+</script>
+</body>
+</html>
